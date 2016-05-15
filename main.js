@@ -4,7 +4,7 @@ let Q = require('q');
 
 let arch = require('process').arch;
 
-let libborderlessundertale = ffi.Library('dll/win64.dll', {
+let libborderlessundertale = ffi.Library(dllPath(), {
   'MakeWindow': [arch === 'x64' ? 'uint64' : 'uint32', ['string']],
   'MoveUTWindow': ['void', [arch === 'x64' ? 'uint64' : 'uint32', 'int', 'int']]
 });

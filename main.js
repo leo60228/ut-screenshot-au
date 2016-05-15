@@ -1,13 +1,7 @@
-let ref = require('ref');
-let ffi = require('ffi');
+let P = require('autoresolve');
+
+let libborderlessundertale = require(P('lib/libborderlessundertale'));
 let Q = require('q');
-
-let arch = require('process').arch;
-
-let libborderlessundertale = ffi.Library(dllPath(), {
-  'MakeWindow': [arch === 'x64' ? 'uint64' : 'uint32', ['string']],
-  'MoveUTWindow': ['void', [arch === 'x64' ? 'uint64' : 'uint32', 'int', 'int']]
-});
 
 let utwindow = null;
 

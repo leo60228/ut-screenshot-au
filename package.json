@@ -1,0 +1,31 @@
+{
+  "name": "undertale-au-maker",
+  "version": "1.0.0",
+  "description": "Makes modified screenshots for the game \"Undertale\" and optionally uploads them to the image hosting service Imgur.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snuggles08/ut-screenshot-au.git"
+  },
+  "keywords": [
+    "undertale",
+    "screenshot",
+    "undertale-au",
+    "imgur",
+    "image",
+    "maker"
+  ],
+  "author": "snuggles08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snuggles08/ut-screenshot-au/issues"
+  },
+  "homepage": "https://github.com/snuggles08/ut-screenshot-au#readme",
+  "dependencies": {
+    "ffi": "^2.0.0",
+    "q": "^1.4.1"
+  }
+}
